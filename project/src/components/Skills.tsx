@@ -141,10 +141,10 @@ const Skills: React.FC = () => {
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              { title: 'AI Projects', value: '25+' },
-              { title: 'Data Models', value: '40+' },
-              { title: 'Web Apps', value: '30+' },
-              { title: 'Happy Clients', value: '50+' }
+              { title: 'Personal Projects', value: '10+' },
+              { title: 'Technical Skills', value: '15+' },
+              { title: 'Certifications', value: '5+' },
+              { title: 'Learning Hours', value: '500+' }
             ].map((stat, index) => (
               <motion.div
                 key={stat.title}
