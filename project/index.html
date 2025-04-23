@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Prathamesh Walvekar</title>
+    <style>
+      @keyframes growWidth {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+      
+      .skill-progress {
+        animation: growWidth 1.5s ease-out forwards;
+      }
+      
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      .timeline-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      
+      .timeline-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      /* For custom cursor */
+      * {
+        cursor: none !important;
+      }
+      
+      /* For smaller screens, disable custom cursor */
+      @media (max-width: 768px) {
+        * {
+          cursor: auto !important;
+        }
+      }
+      
+      .animate-blink {
+        animation: blink 1s infinite;
+      }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      
+      .delay-100 { animation-delay: 0.1s; }
+      .delay-200 { animation-delay: 0.2s; }
+      .delay-300 { animation-delay: 0.3s; }
+      .delay-400 { animation-delay: 0.4s; }
+      .delay-500 { animation-delay: 0.5s; }
+      .delay-600 { animation-delay: 0.6s; }
+      .delay-700 { animation-delay: 0.7s; }
+      .delay-800 { animation-delay: 0.8s; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Intersection Observer for timeline animations
+      document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        // Observe all timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+          observer.observe(item);
+        });
+      });
+    </script>
+  </body>
+</html>
