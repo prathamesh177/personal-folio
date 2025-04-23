@@ -67,7 +67,7 @@ const Experience: React.FC = () => {
       id: 4,
       title: "B.Tech in Computer Science and Engineering (Data Science)",
       location: "KIT's College Of Engineering, Kolhapur, Maharashtra",
-      description: "• Cumulative GPA: 8.0/10.0\n• Relevant Coursework: Machine Learning, Deep Learning, Probability and Applied Statistics, Data Structure and Algorithms, Natural Language Processing, Operating System, Computer Networks, Database Management System",
+      description: "• Cumulative GPA: 8.1/10.0\n• Relevant Coursework: Machine Learning, Deep Learning, Probability and Applied Statistics, Data Structure and Algorithms, Natural Language Processing, Operating System, Computer Networks, Database Management System",
       date: "Dec 2021 - July 2025",
       icon: 'education'
     },
@@ -82,7 +82,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-900 min-h-screen relative">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800 min-h-screen relative">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           className="text-center mb-16"
@@ -91,11 +91,11 @@ const Experience: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Experience & Education
           </h2>
           <div className="w-32 h-1.5 bg-blue-600 mx-auto"></div>
-          <p className="text-gray-300 mt-6 max-w-2xl mx-auto text-lg font-medium">
+          <p className="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto text-lg font-medium">
             My professional journey and educational background.
           </p>
         </motion.div>
@@ -120,7 +120,7 @@ const Experience: React.FC = () => {
                   {/* Content */}
                   <div className="w-[calc(50%-2rem)]">
                     <motion.div 
-                      className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-blue-900/20 transition-all duration-300 border border-gray-700 hover:border-blue-500/50 transform hover:-translate-y-1"
+                      className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-blue-900/20 transition-all duration-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500/50 transform hover:-translate-y-1"
                       initial={{ x: index % 2 === 0 ? -50 : 50, opacity: 0 }}
                       whileInView={{ x: 0, opacity: 1 }}
                       viewport={{ once: true }}
@@ -128,7 +128,7 @@ const Experience: React.FC = () => {
                     >
                       <TypewriterText text={item.title} delay={0.4} />
                       <motion.div 
-                        className="text-blue-400 font-medium mb-3"
+                        className="text-blue-600 dark:text-blue-400 font-medium mb-3"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
@@ -138,7 +138,7 @@ const Experience: React.FC = () => {
                       </motion.div>
                       <TypewriterText text={item.description} delay={0.8} />
                       <motion.div 
-                        className="text-sm text-gray-400 font-medium border-t border-gray-700 pt-3"
+                        className="text-sm text-gray-500 dark:text-gray-400 font-medium border-t border-gray-200 dark:border-gray-600 pt-3"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
