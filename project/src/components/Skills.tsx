@@ -269,7 +269,7 @@ const Skills: React.FC = () => {
               { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
               { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
               { name: 'Frappe', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8af8iw4kSGzCF9olL-kXPLN8uzHA6QFH8CA&s' },
-              { name: 'ERPNEXT', icon: 'https://www.okoone.com/wp-content/uploads/2024/09/erpnext-logo.png' },
+              { name: 'ERPNEXT', icon: 'https://raw.githubusercontent.com/frappe/erpnext/develop/erpnext/public/images/erpnext-logo.png' },
             ].map((tech, index) => (
               <motion.div 
                 key={tech.name}
