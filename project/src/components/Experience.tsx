@@ -52,7 +52,7 @@ const Experience: React.FC = () => {
       title: "SDE Intern",
       location: "Quantbit Technologies PVT LTD",
       description: "Software Development Engineering Intern",
-      date: "2024",
+      date: "2025",
       icon: 'work'
     },
     {
