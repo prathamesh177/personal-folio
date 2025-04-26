@@ -1,0 +1,51 @@
+.react-calendar-heatmap text {
+  font-size: 10px;
+  fill: #aaa;
+}
+
+.react-calendar-heatmap .react-calendar-heatmap-small-text {
+  font-size: 5px;
+}
+
+.react-calendar-heatmap rect:hover {
+  stroke: #555;
+  stroke-width: 1px;
+}
+
+.react-calendar-heatmap .color-empty {
+  fill: #eeeeee;
+}
+
+/* GitHub contribution colors */
+.react-calendar-heatmap .color-github-1 {
+  fill: #9be9a8;
+}
+
+.react-calendar-heatmap .color-github-2 {
+  fill: #40c463;
+}
+
+.react-calendar-heatmap .color-github-3 {
+  fill: #30a14e;
+}
+
+.react-calendar-heatmap .color-github-4 {
+  fill: #216e39;
+}
+
+/* LeetCode contribution colors */
+.react-calendar-heatmap .color-leetcode-1 {
+  fill: #ffa116;
+}
+
+.react-calendar-heatmap .color-leetcode-2 {
+  fill: #ff8c00;
+}
+
+.react-calendar-heatmap .color-leetcode-3 {
+  fill: #ff6b00;
+}
+
+.react-calendar-heatmap .color-leetcode-4 {
+  fill: #ff4500;
+} 
