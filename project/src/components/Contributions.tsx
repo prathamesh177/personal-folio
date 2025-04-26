@@ -40,7 +40,7 @@ const Contributions: React.FC = () => {
     // Fetch GitHub heatmap data from backend (GraphQL, full year)
     const fetchGitHubHeatmap = async () => {
       try {
-        const response = await axios.post('http://localhost:3001/api/github-contributions', {
+        const response = await axios.post('https://personal-folio-ene7.onrender.com/api/github-contributions', {
           username: GITHUB_USERNAME
         });
         const calendar = response.data.data;
@@ -82,7 +82,7 @@ const Contributions: React.FC = () => {
     // Fetch combined DSA contributions from all platforms
     const fetchCombinedDSA = async () => {
       try {
-        const response = await axios.post('http://localhost:3001/api/dsa-contributions', {
+        const response = await axios.post('https://personal-folio-ene7.onrender.com/api/dsa-contributions', {
           leetcodeUsername: LEETCODE_USERNAME, // or LEETCODE_USERNAME if different
           gfgUsername: 'walvekarpra9del',
           code360Username: 'Prathamesh Shivanand Walvekar',
