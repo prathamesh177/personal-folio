@@ -10,6 +10,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Cursor from './components/Cursor';
+import Contributions from './components/Contributions';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ function App() {
           <Skills />
           <Projects />
           <Experience />
+          <Contributions />
           <Contact />
         </main>
         <Footer />
