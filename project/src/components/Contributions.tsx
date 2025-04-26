@@ -161,7 +161,7 @@ const Contributions: React.FC = () => {
           <CalendarHeatmap
             startDate={startDate}
             endDate={endDate}
-            values={leetcodeData}
+            values={Array.isArray(leetcodeData) ? leetcodeData : []}
             classForValue={(value) => {
               if (!value) return 'color-empty';
               return `color-leetcode-${Math.min(4, value.count)}`;
