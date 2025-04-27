@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Github as GitHub, Linkedin, Twitter } from 'lucide-react';
-import profileImage from '../assets/2122000117_Walvekar_prathamesh_shivanand.jpg';
 
 const Hero: React.FC = () => {
   const [text, setText] = useState('');
@@ -103,7 +102,7 @@ const Hero: React.FC = () => {
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
             <img 
-              src={profileImage}
+              src="https://avatars.githubusercontent.com/u/121346957?v=4"
               alt="Prathamesh Walvekar" 
               className="w-full h-full object-cover"
             />
