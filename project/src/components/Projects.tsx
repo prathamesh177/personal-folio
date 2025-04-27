@@ -18,6 +18,20 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Easy-Lang",
+      description: "Programming Language with a simple and intuitive syntax for beginners to learn programming.(In Development)",
+      image: "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=1024",
+
+      tags: ["Programming Language", "Python"],
+      liveUrl: "#",
+      repoUrl: "https://github.com/prathamesh177/Easy-Lang",
+      category: "ai"
+    },
+
+    
+    
+    {
+      id: 2,
       title: "Dermato-AI",
       description: "AI-powered dermatological disease prediction system using machine learning for accurate skin condition diagnosis.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
@@ -28,7 +42,7 @@ const Projects: React.FC = () => {
       category: "ai"
     },
     {
-      id: 2,
+      id: 3,
       title: "Number Plate Detection",
       description: "Real-time number plate detection and recognition using YOLO and computer vision techniques.",
       image: "https://mobisoftinfotech.com/resources/wp-content/uploads/2022/02/og-Number-Plate-Detection.png",
@@ -38,7 +52,7 @@ const Projects: React.FC = () => {
       category: "ai"
     },
     {
-      id: 3,
+      id: 4,
       title: "Google Gemini Clone",
       description: "A clone of Google's Gemini AI interface with similar functionality and user experience.",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -49,7 +63,7 @@ const Projects: React.FC = () => {
       category: "web"
     },
     {
-      id: 4,
+      id: 5,
       title: "Transaction Dashboard",
       description: "Interactive dashboard for tracking and analyzing financial transactions with real-time updates.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
@@ -59,7 +73,7 @@ const Projects: React.FC = () => {
       category: "web"
     },
     {
-      id: 5,
+      id: 6,
       title: "Student Progress Tracker",
       description: "Comprehensive platform for tracking and analyzing student academic progress and performance.",
       image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -69,7 +83,7 @@ const Projects: React.FC = () => {
       category: "web"
     },
     {
-      id: 6,
+      id: 7,
       title: "Spotify Clone",
       description: "A feature-rich music streaming platform clone with similar functionality to Spotify.",
       image: "https://images.pexels.com/photos/6771985/pexels-photo-6771985.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -79,7 +93,7 @@ const Projects: React.FC = () => {
       category: "web"
     },
     {
-      id: 7,
+      id: 8,
       title: "Cyber Criminal Data Analysis",
       description: "Comprehensive analysis of cyber criminal activities using data science techniques to identify patterns and trends in cybercrime.",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
@@ -89,7 +103,7 @@ const Projects: React.FC = () => {
       category: "data"
     },
     {
-      id: 8,
+      id: 9,
       title: "Multilingual Video Call System",
       description: "Advanced video conferencing platform with real-time translation, screen sharing, chat, and recording capabilities supporting multiple languages.",
       image: "https://www.ringcentral.com/content/dam/rc-www/gb/hero-image/employees-conference-call.jpg",
